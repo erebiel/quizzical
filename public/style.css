@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #293264;
+  background-color: #1c1c1c;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Karla", sans-serif;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 550px;
+  height: 550px;
+  background-color: #f5f7fb;
+  background: url("./assets/blob-top.png") right top no-repeat,
+    url("./assets/blob-bottom.png") left bottom no-repeat, #f5f7fb;
+}
+
+button.start {
+  background: #4d5b9e;
+  color: #f5f7fb;
+  padding: 15px;
+  width: 195px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 15px;
+}
+
+div.start {
+  text-align: center;
+}
