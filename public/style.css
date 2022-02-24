@@ -38,10 +38,18 @@ p {
   align-items: center;
   justify-content: center;
   width: 550px;
-  height: 550px;
+  min-height: 550px;
   background-color: #f5f7fb;
+  padding: 10px 0;
   background: url("./assets/blob-top.png") right top no-repeat,
     url("./assets/blob-bottom.png") left bottom no-repeat, #f5f7fb;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
 }
 
 button.start {
@@ -49,9 +57,6 @@ button.start {
   color: #f5f7fb;
   padding: 15px;
   width: 195px;
-  border: none;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
   font-size: 1rem;
   border-radius: 15px;
 }
@@ -63,14 +68,18 @@ div.start {
 button.answer--choice {
   background: transparent;
   border: 1px solid #293264;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
   font-size: 0.7rem;
   color: #293264;
   padding: 2px 10px;
   min-width: 60px;
   margin-right: 10px;
   border-radius: 8px;
+}
+
+button.answer--choice:hover,
+button.answer--selected {
+  background: #d6dbf5;
+  border: 1px solid #d6dbf5;
 }
 
 hr {
@@ -82,19 +91,21 @@ hr {
   padding: 0;
 }
 
-button.answer {
+button.checkanswer {
   background: #4d5b9e;
   color: #f5f7fb;
-  padding: 11px 25px;
-  border: none;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
+  padding: 11px 20px;
   font-size: 0.7rem;
   border-radius: 10px;
 }
 
 div.quiz {
   max-width: 438px;
+  text-align: center;
+}
+
+div.question {
+  text-align: left;
 }
 
 div.answers {

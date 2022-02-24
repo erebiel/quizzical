@@ -3,7 +3,7 @@ import Startscreen from "./components/Startscreen";
 import Quiz from "./components/Quiz";
 
 export default function App() {
-  const [quizStart, setQuizStart] = React.useState(false);
+  const [quizStart, setQuizStart] = React.useState(true);
 
   function startQuiz() {
     setQuizStart(true);
